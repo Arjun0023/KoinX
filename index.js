@@ -10,7 +10,7 @@ const EthereumPrice = require('./models/EthereumPrice');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Connect to MongoDB
+// Connection string to MongoDB 
 mongoose.connect('mongodb://localhost:27017/crypto_transactions', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
